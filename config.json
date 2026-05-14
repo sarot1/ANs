@@ -1,0 +1,20 @@
+{
+    "test_directory": "tests/",
+    "test_files": [
+        "__init__.py"
+    ],
+    "coverage_targets": [
+        "core/",
+        "memory/",
+        "telemetry/",
+        "modules/",
+        "orchestrator/",
+        "reports/"
+    ],
+    "markers": [
+        "unit: Unit tests",
+        "integration: Integration tests",
+        "performance: Performance tests",
+        "asyncio: Async tests"
+    ]
+}

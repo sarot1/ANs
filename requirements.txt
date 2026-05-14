@@ -1,0 +1,92 @@
+# R1X Platform - Requirements
+# Autonomous Cyber Intelligence Platform
+# Version: 3.0.0 - With DeepSeek AI Integration
+
+# ══════════════════════════════════════════════════════════════════════════════
+# CORE DEPENDENCIES
+# ══════════════════════════════════════════════════════════════════════════════
+
+aiohttp>=3.9.0
+aiohttp[speedups]>=3.9.0
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PERFORMANCE & OPTIMIZATION
+# ══════════════════════════════════════════════════════════════════════════════
+
+uvloop>=0.19.0                  # Ultra-fast asyncio event loop
+xxhash>=3.4.0                   # Fast hashing for fingerprints
+charset-normalizer>=3.3.0       # Fast charset detection (replaced cchardet)
+aiodns>=3.1.0                   # Async DNS resolver
+Brotli>=1.1.0                   # Brotli compression support
+
+# ══════════════════════════════════════════════════════════════════════════════
+# LOGGING & TELEMETRY
+# ══════════════════════════════════════════════════════════════════════════════
+
+loguru>=0.7.2
+structlog>=24.1.0
+prometheus-client>=0.19.0
+opentelemetry-api>=1.22.0
+opentelemetry-sdk>=1.22.0
+psutil>=5.9.0                   # System telemetry
+
+# ══════════════════════════════════════════════════════════════════════════════
+# DATA PROCESSING & STORAGE
+# ══════════════════════════════════════════════════════════════════════════════
+
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+networkx>=3.2.0                 # Knowledge graph
+sqlalchemy>=2.0.0
+aiosqlite>=0.19.0               # Async SQLite
+
+# ══════════════════════════════════════════════════════════════════════════════
+# CLI & USER INTERFACE
+# ══════════════════════════════════════════════════════════════════════════════
+
+click>=8.1.0                    # CLI framework
+rich>=13.7.0                    # Rich terminal output
+typer>=0.9.0                    # Modern CLI
+prompt-toolkit>=3.0.0           # Interactive shell
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SECURITY & ENCRYPTION
+# ══════════════════════════════════════════════════════════════════════════════
+
+cryptography>=41.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# ══════════════════════════════════════════════════════════════════════════════
+# WEB FRAMEWORK (Optional API)
+# ══════════════════════════════════════════════════════════════════════════════
+
+fastapi>=0.109.0
+uvicorn>=0.27.0
+websockets>=12.0
+
+# ══════════════════════════════════════════════════════════════════════════════
+# TESTING & VALIDATION
+# ══════════════════════════════════════════════════════════════════════════════
+
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+pytest-timeout>=2.2.0
+httpx>=0.26.0                   # Async HTTP testing
+
+# ══════════════════════════════════════════════════════════════════════════════
+# CODE QUALITY
+# ══════════════════════════════════════════════════════════════════════════════
+
+ruff>=0.1.0                     # Linting
+mypy>=1.8.0                     # Type checking
+black>=24.1.0                   # Formatting
+isort>=5.13.0                   # Import sorting
+
+# ══════════════════════════════════════════════════════════════════════════════
+# DOCUMENTATION
+# ══════════════════════════════════════════════════════════════════════════════
+
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
